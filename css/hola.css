@@ -1,0 +1,1219 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:whitesmoke;
+}
+
+/*//////////////////////////////////////////////  1ª ENCABEZADO  //////////////////////////////////////////*/
+
+.header{
+    min-height:90vh;
+    width:100%;
+    background-image:linear-gradient(rgba(7, 15, 49, 0.7),rgb(7, 15, 49,0.7)), url(https://cdn.pymesenlared.es/img/7/101/64319/salon-1.jpg);
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    padding:0;
+}
+.imag{
+    width:11%;
+    height:5%s;
+}
+
+/*---------- menú de navegación --------*/
+
+.navegador{
+    position:relative;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    background-color:black;
+    padding:25px 270px;
+}
+nav ul li .llamar{
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    background-color:rgb(10, 221, 158);
+}
+
+
+
+
+
+nav ul li .llamar:hover{
+    color:aliceblue;
+    background-color:rgb(47, 112, 252);
+    transition:0.5s;
+
+}
+.link ul{
+    padding:30px 0;
+    display:flex;
+    gap:1.8em;
+    list-style:none;
+}
+.link ul a{
+    color:white;
+    text-transform:uppercase;
+    padding:15px;
+    text-decoration:none;
+}
+nav ul .home{
+    color:rgb(218, 4, 4);
+}
+.link ul li:hover{
+    transform:scale(1.05);
+    transition:0.5s;
+}
+
+.link ul a:hover{
+    background:rgb(218, 4, 4);
+}
+
+
+
+
+nav ul .home:hover{
+    color:white;
+}
+
+a{
+    font-size:20px;
+}
+
+/*---------- Título del encabezado --------*/
+
+.titulo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align:left;
+    transform:translate(-50%, -50%);
+    color:white;
+}
+h1{
+    text-transform:uppercase;
+    font-size:50px;
+}
+
+/*---------- Texto --------*/
+
+.titulo p a{
+    margin-top:30px;
+    text-transform:uppercase;
+    font-size:30px;
+    padding:15px 45px;
+    background-color:rgb(10, 221, 158);
+    display:inline-block;
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+}
+.titulo p a:hover{
+    color:aliceblue;
+    background-color:rgb(47, 112, 252);
+    transition:0.5s;
+    padding:19px 49px;
+}
+
+/*---------- Menú de hamburguesa --------*/
+
+#abrir, #cerrar{
+    display:none;
+}
+
+
+/*---------- Media query para adaptralo a los diferentes tamaños --------*/
+
+@media (max-width:1500px){
+    /*---------- menú de navegación --------*/
+    .navegador{
+        display: flex;
+        justify-content:space-around;
+        padding:25px 10px;
+    }
+}
+
+
+@media (max-width:1000px){
+
+    /*---------- menú de navegación --------*/
+
+    .navegador{
+        background-color:black;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    /*---- El menú de hamburguesa ----*/
+
+    .link{
+        display: none;
+    }
+    .link{
+        background-color: rgb(43, 42, 42);
+        position:absolute;
+        right:0;
+        top:0;
+
+    }
+
+    .mostrar{
+        display:block;
+    }
+
+    .link ul{
+        flex-direction: column;
+    }
+
+    #abrir, #cerrar{
+        display:block;
+    }
+
+    /*---- Hover de los enlaces ----*/
+
+    nav ul li .llamar:hover{
+        color:aliceblue;
+        background-color:rgb(47, 112, 252);
+        transition:0.5s;
+        padding:10px;
+    }
+
+
+
+    .link ul li:hover{
+        transform:none;
+    }
+    
+    .link ul a:hover{
+        background:rgb(218, 4, 4);
+        padding:none;
+        transition:0.5s;
+        transform:none;
+    }
+
+    /*---- Hover de los enlaces ----*/
+
+    .link ul a{
+        color:white;
+        text-transform:uppercase;
+        padding:5px 10px;
+        text-decoration:none;
+    }
+    nav ul .home{
+        color:rgb(218, 4, 4);
+    }
+    
+    .link .nav-links{
+        padding:30px 0;
+        display:flex;
+    }
+
+    .link ul li{
+
+        display:flex;
+        justify-content:center;
+    }
+
+    /*---- Títulos ----*/
+
+    .titulo{
+    position:absolute;
+    top:63%;
+    left:50%;
+
+    }
+
+    .titulo h1{
+        font-size:40px;
+    }
+    .titulo p a{
+        padding:10px 5px;
+    }
+    .titulo p a:hover{
+        padding:15px 10px;
+    }
+
+}
+
+/*-------------------------------- (Segundo) MEJORES ---------------------------------*/
+
+/*---------- Contenedor principal --------*/
+
+.mejores{
+    background-color:rgb(238, 246, 255);
+    min-height:65vh;
+    width:100%;
+}
+h2{
+    text-transform:uppercase;
+}
+.title{
+    margin-bottom: 30px;
+    width:75%;
+    margin:auto;/*para centrarlo*/
+    text-align: center;
+    padding-top: 60px;
+}
+
+.contenedor{
+    width:75%;
+    margin:auto;/*para centrarlo*/
+    text-align: center;
+    padding-top: 60px;
+    display:flex;
+}
+
+/*---------- Contenedor títulos y texto --------*/
+
+.fila{
+    padding:0 35px;
+    background-color: rgb(255, 253, 238);
+    margin-right:40px;
+}
+.fila:hover{
+    box-shadow:0 0 20px 0 rgb(175, 173, 173);
+    transition:.5s;
+}
+
+.fila h2{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.fila p{
+    text-align:left;
+    text-align:justify;/*para margen*/
+    margin-bottom: 15px;
+}
+
+/*---- Media query para adaptralo a los diferentes tamaños ----*/
+
+@media (max-width:1500px){
+
+    .contenedor{
+        display:flex;
+        flex-direction:column;
+    }
+    .fila{
+        margin-bottom:30px;
+    }
+}
+
+/*-------------------------------- (Tercero) CONSULTAS ---------------------------------*/
+
+/*---------- Contenedor principal --------*/
+
+.consultas{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin:60px 0;
+}
+
+.consultas .consulta-imagen{
+    background-color:white;
+    height:150px;
+    width:355px;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    align-items: center;
+}
+
+.consultas .consulta-imagen:hover{
+    box-shadow:5px 5px 20px 5px rgb(255, 245, 215);
+}
+.consultas .consulta-imagen:hover img{
+    transform:scale(1.2);
+    transition:.5s;
+}
+
+/*---- Media query para adaptralo a los diferentes tamaños ----*/
+
+@media (max-width:1260px){
+    .consultas .consulta-imagen{
+        width:261px;
+        gap:10px;
+    }
+    /*---------- texto --------*/
+    .consulta-imagen .consulta-texto p{
+        font-size:16px;
+    }
+    .consulta-imagen .consulta-texto h2{
+        font-size:18px;
+    }
+    /*---------- medidas --------*/
+    .consultas .consulta-imagen:nth-child(1) img{
+        width:40px;
+        height:40px;
+    }
+
+    .consultas .consulta-imagen:nth-child(2) img{
+        width:30px;
+        height:30px;
+    }
+    .consultas .consulta-imagen:nth-child(3) img{
+        width:30px;
+        height:30px;
+    }
+
+}
+
+@media (max-width:955px){
+    .consultas .consulta-imagen{
+        width:201px;
+        gap:8px;
+    }
+    /*---------- texto --------*/
+    .consulta-imagen .consulta-texto p{
+        font-size:12px;
+    }
+    .consulta-imagen .consulta-texto h2{
+        font-size:14px;
+    }
+    /*---------- medidas --------*/
+    .consultas .consulta-imagen:nth-child(1) img{
+        width:30px;
+        height:30px;
+    }
+
+    .consultas .consulta-imagen:nth-child(2) img{
+        width:20px;
+        height:20px;
+    }
+    .consultas .consulta-imagen:nth-child(3) img{
+        width:20px;
+        height:20px;
+    }
+
+}
+@media (max-width:755px){
+    .consultas{
+        flex-direction:column;
+        align-items: center;
+    }
+    .consultas .consulta-imagen{
+        width:281px;
+        gap:12px;
+    }
+    /*---------- texto --------*/
+    .consulta-imagen .consulta-texto p{
+        font-size:14px;
+    }
+    .consulta-imagen .consulta-texto h2{
+        font-size:16px;
+    }
+    /*---------- medidas --------*/
+    .consultas .consulta-imagen:nth-child(1) img{
+        width:40px;
+        height:40px;
+    }
+    
+    .consultas .consulta-imagen:nth-child(2) img{
+        width:30px;
+        height:30px;
+    }
+    .consultas .consulta-imagen:nth-child(3) img{
+        width:30px;
+        height:30px;
+    }
+}
+
+/*---------- medidas de las imágenes --------*/
+
+.consulta-imagen:nth-child(1) img{
+    width:50px;
+    height:50px;
+}
+
+.consulta-imagen:nth-child(2) img{
+    width:40px;
+    height:40px;
+}
+.consulta-imagen:nth-child(3) img{
+    width:40px;
+    height:40px;
+}
+
+/*---------- apatado del texto --------*/
+
+.consulta-texto{
+    text-align:center;
+}
+.consulta-texto p{
+    margin-top:10px;
+    font-size:16px;
+}
+.consulta-texto h2{
+    cursor:pointer;
+    font-size:22px;
+}
+.consulta-texto h2:hover{
+    color:rgb(218, 4, 4);
+}
+
+/*-------------------------------- (Cuarto) TENDENCIA ---------------------------------*/
+
+.tendencia{
+    height:50vh;
+    width:100%;
+    margin-top:20px;
+}
+
+/*---------- Contenedor principal --------*/
+
+.trend{
+    margin-bottom: 30px;
+    height:350px;
+    width:1170px;
+    margin:auto;
+    text-align: center;
+    padding-top: 10px;
+    overflow:auto;
+    display:flex;
+    gap:16px;
+}
+
+/*---------- Contenedor secundario de las imágenes y textos --------*/
+
+.trend .container{
+    cursor:pointer;
+    background-color: white;
+}
+
+.trend .container:hover{
+    opacity:0.8;
+}
+
+/*---------- Textos --------*/
+
+.trend .items{padding-top:15px;}
+.trend .items p{
+    text-align:center;
+}
+.trend .items p{
+    color:rgb(43, 43, 43);
+}
+.trend .items .grisaceo{
+    color:rgb(148, 143, 143);
+}
+.tachado{
+    text-decoration:line-through;
+}
+.agrandar{
+    font-size:25px;
+    padding-left:8px;
+    color:rgb(93, 173, 147);
+}
+
+/*---------- medida de las imágenes --------*/
+
+.trend .item img{
+    width:290px;
+    height:200px;
+}
+
+/*---------- Títulos --------*/
+
+.titulo-produc{
+    width:200px;
+    margin:auto;
+    background-color:white;
+    box-shadow:0 0 3px 0;
+    display: flex;
+    justify-content: center;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+.titulo-produc h3{
+    text-transform:capitalize;
+    font-size:30px;
+    color:rgb(218, 4, 4);
+}
+.titulo-produc:hover h3{
+    color: aliceblue;
+
+}
+
+.titulo-produc:hover{
+    background-color:rgb(218, 4, 4);
+    transition:.5s;
+}
+
+/*---- Media query para adaptralo a los diferentes tamaños ----*/
+
+@media (max-width:1260px){
+    .trend{
+        width:880px;
+    }
+}
+@media (max-width:955px){
+    .trend{
+        width:700px;
+    }
+}
+@media (max-width:755px){
+    .trend{
+        width:68%;
+    }
+
+    .trend .item img{
+        width:200px;
+        height:110px;
+    }
+
+    .trend .container .items p{
+        font-size:16px;
+    }
+    .trend{
+        height:300px;
+    }
+    
+}
+/*//////////////////////////////////////////////   2ª APARTADO PRODUCTOS   //////////////////////////////////////////*/
+/*-------------------------------- (Principal) ENCABEZADO ---------------------------------*/
+.header1{
+    min-height:60vh;
+    width:100%;
+    background-image:linear-gradient(rgba(7, 15, 49, 0.7),rgb(7, 15, 49,0.7)), url(https://www.mueblesmiguel.es/32443-superlarge_default/mueble-salon-moderno-en-olmo-gris-detalles-blancos-new-royal-37.jpg);
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    padding:0;
+}
+
+/*---------- Título del encabezado --------*/
+
+.titulo1{
+    position:absolute;
+    top:40%;
+    left:30%;
+    text-align:left;
+    transform:translate(-50%, -50%);
+    color:white;
+}
+
+/*-------------------------------- (Primero) GALERÍA DE IMÁGENES ---------------------------------*/
+
+/*---------- Contenedor secundario de la galería --------*/
+
+.conten-imag{
+    width:70%;
+    transform:translate(-50%);
+    margin-left:50%;
+    padding-top:30px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:16px;
+    row-gap:60px;
+}
+
+/*---------- Contenedor de las imágenes y los textos --------*/
+
+.imagenes .muebles{
+    background-color: white;
+}
+
+.imagenes .muebles:hover{
+    transform:scale(1.03);
+    cursor:pointer;
+    transition:.5s;
+}
+
+/*---------- Texto --------*/
+
+.imagenes .muebles p{
+    font-size:20px;
+    text-align:center;
+}
+.grisaceo{
+    color:rgb(148, 143, 143);
+}
+
+/*---------- Medida de las imágenes --------*/
+
+.imagenes .muebles img{
+    width:270x;
+    height:270px;
+}
+
+/*---- Media query para adaptralo a los diferentes tamaños ----*/
+
+@media (max-width:750px){
+    .titulo1 h1{
+        font-size:35px;
+    }
+    .titulo1{
+        top:40%;
+        left:30%;
+        text-align:left;
+        transform:translate(-50%, -50%);
+        color:white;
+    }
+}
+/*//////////////////////////////////////////////   3ª PRESUPUESTO   //////////////////////////////////////////*/
+
+/*-------------------------------- (Principal) ENCABEZADO ---------------------------------*/
+
+.header2{
+    min-height:60vh;
+    width:100%;
+    background-image:linear-gradient(rgba(7, 15, 49, 0.7),rgb(7, 15, 49,0.7)), url(https://cdn.pymesenlared.es/img/7/101/64319/salon-1.jpg);
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    padding:0;
+}
+
+/*-------------------------------- (Primero) FORMULARIO ---------------------------------*/
+
+/*---------- Título del encabezado --------*/
+
+.titulo2{
+    position:absolute;
+    top:40%;
+    left:30%;
+    text-align:left;
+    transform:translate(-50%, -50%);
+    color:white;
+}
+
+/*---------- Contenedor principal --------*/
+
+.presupuest{
+    display: flex;
+    justify-content:center;
+    background-color:rgb(244, 249, 255);
+}
+
+/*---------------------- Contenedor - formulario ----------------*/
+
+.contenedor-form{
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid rgb(201, 200, 200);
+    width:65%;
+    height:90vh;
+    box-shadow:0 2px 2px 0 rgb(175, 173, 173);
+    background-color:rgb(255, 255, 255);
+}
+
+/*---------------------- formulario ----------------*/
+
+.formulario-box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:10px;
+}
+
+.form-box input{
+    width:800px;
+    height: 35px;
+}
+.form-box textarea{
+    width:350px;
+    height:150px;
+}
+.form-box{
+    margin:20px 0;
+}
+
+/*---------------------- titulo del formulario ----------------*/
+
+.inicio-sesion{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+}
+
+/*---------------------- Registro ----------------*/
+
+.registro{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:25px;
+}
+.registro .registro-grande{
+    font-size:22px;
+}
+.registro .registro-p{
+    margin-top:10px;
+}
+.registro a{
+    text-decoration:none;
+    color:rgb(56, 54, 54);
+}
+.registro a:hover{
+    text-decoration:underline;
+    color:rgb(27, 74, 131);
+}
+
+/*---------------------- Botón inicio sesión ----------------*/
+
+.iniciar-sesion{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+}
+
+.iniciar-sesion input{
+    padding:10px;
+    font-size: 18px;
+    background-color: rgb(231, 229, 229);
+    color:rgb(124, 120, 120);
+    cursor:pointer;
+    border:none;
+}
+
+.iniciar-sesion input:hover{
+    background-color:rgb(218, 4, 4);
+    color:aliceblue;
+    box-shadow:0 5px 5px 0 rgb(175, 173, 173);
+    transition:.5s;
+}
+
+
+
+
+
+/*----------------------    CHECK - BOX     --------------------*/
+
+/*---- Política de privacidad ----*/
+
+.check-box{
+    display: flex;
+    justify-content: space-between;
+}
+.check-box .privacidad{
+    font-size:18px;
+    margin-left:-400px;
+    color:rgb(56, 55, 55);
+}
+
+/*---- Olvido de contraseña ----*/
+
+.check-box p a{
+    font-size: 18px;
+    color:rgb(56, 55, 55);
+    text-decoration:none;
+}
+.check-box p a:hover{
+    text-decoration:underline;
+    color:rgb(27, 74, 131);
+}
+
+/*---- Media query para adaptralo a los diferentes tamaños ----*/
+
+@media (max-width:680px){
+    .titulo2{
+        top:45%;
+        left:35%;
+        transform:translate(-50%, -50%);
+    }
+    .titulo2 h1{
+        font-size:35px;
+    }
+}
+@media (max-width:1350px){
+    .form-box input{
+        width:600px;
+    }
+    .check-box .privacidad{
+        margin-left:-210px;
+    }
+}
+@media (max-width:1040px){
+    .form-box input{
+        width:400px;
+    }
+    .check-box .privacidad{
+        font-size:16px;
+        margin-left:-45px;
+    }
+    .check-box p a{
+        font-size: 16px;
+    }
+    .registro .registro-grande{
+        font-size:18px;
+    }
+    .registro .registro-p{
+        margin-top:16px;
+    }
+    .registro a{
+        font-size:17px;
+    }
+}
+@media (max-width:720px){
+    .form-box input{
+        width:310px;
+    }
+    .check-box .privacidad{
+        font-size:15px;
+        margin-left:-25px;
+    }
+    .check-box p a{
+        font-size: 15px;
+    }
+    .registro .registro-grande{
+        font-size:17px;
+    }
+    .registro .registro-p{
+        margin-top:15px;
+    }
+    .registro a{
+        font-size:16px;
+    }
+    .contenedor-form{
+        width:95%;
+    }
+}
+
+/*//////////////////////////////////////////////   3ª CONTACTO  //////////////////////////////////////////*/
+
+/*-------------------------------- (Principal) ENCABEZADO ---------------------------------*/
+
+.header3{
+    min-height:60vh;
+    width:100%;
+    background-image:linear-gradient(rgba(7, 15, 49, 0.7),rgb(7, 15, 49,0.7)), url(https://www.esneca.com/wp-content/uploads/tipos-de-muebles-1200x675.jpg);
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    padding:0;
+}
+
+/*---------- Título del encabezado --------*/
+
+.titulo3{
+    position:absolute;
+    top:40%;
+    left:30%;
+    text-align:left;
+    transform:translate(-50%, -50%);
+    color:white;
+}
+
+/*-------------------------------- (Primero) LOCALIZACIÓN ---------------------------------*/
+
+/*---------- Contenedor principal --------*/
+
+.localizacion{
+    display: flex;
+    margin: auto;
+    width:80%;
+    margin-top:20px;
+}
+
+/*----- Reparto porcentaje flexbox ----*/
+
+.localizacion-imagen{
+    flex:45%;
+}
+
+.localizacion-datos{
+    flex:50%;
+}
+
+/*---------- Texto --------*/
+
+.localizacion-datos h2{
+    text-align:center;
+    margin: auto;
+}
+
+.localizacion-datos h2:hover{
+    color:rgb(218, 4, 4);
+    transition:.5s;
+}
+
+.localizacion-texto p{
+    font-size:20px;
+}
+
+.localizacion-texto a{
+    font-size:20px;
+    text-decoration:none;
+    color:black;
+}
+.localizacion-texto a:hover{
+    color:rgb(218, 4, 4);
+}
+
+/*---------- Contenedor de los textos --------*/
+
+
+.localizacion-texto .localizacion-items{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:550px;
+    height:57px;
+    margin:auto;
+    margin-bottom:40px;
+    border-radius:30px;
+    box-shadow:0 0 10px 0 rgb(175, 173, 173);
+}
+
+.localizacion-texto .localizacion-items:hover{
+    box-shadow:0 0 10px 0 rgb(247, 166, 166);
+    transform:scale(1.01);
+}
+
+.localizacion-texto .localizacion-items:nth-child(1){
+    margin-top:20px;
+}
+
+
+/*-------- Medida de la imagen --------*/
+
+.localizacion-imagen img{
+    width:700px;
+}
+
+/*---- Media query para adaptralo a los diferentes tamaños ----*/
+
+@media (max-width:680px){
+    .titulo3{
+        top:45%;
+        left:35%;
+        transform:translate(-50%, -50%);
+    }
+    .titulo3 h1{
+        font-size:35px;
+    }
+}
+
+
+@media(max-width:1640px){
+    .localizacion-texto .localizacion-items{
+        width:450px;
+        height:47px;
+        margin-bottom:35px;
+    }
+
+
+    .localizacion-texto p{
+        font-size:18px;
+    }
+    .localizacion-texto a{
+        font-size:18px;
+    }
+
+
+    .localizacion-imagen img{
+        width:600px;
+    }
+}
+
+@media(max-width:1385px){
+    .localizacion{
+        flex-direction: column;
+    }
+    
+
+    .localizacion-texto .localizacion-items{
+        width:600px;
+        height:37px;
+    }
+
+
+    .localizacion-imagen img{
+        width:600px;
+    }
+
+    /*----- Reparto porcentaje flexbox ----*/
+    
+    .localizacion-imagen{
+        flex:none;
+    }
+    
+    .localizacion-datos{
+        flex:none;
+    }
+
+
+    .localizacion-imagen{
+        margin:auto;
+    }
+}
+
+@media (max-width:690px){
+    .localizacion-texto .localizacion-items{
+        width:350px;
+        height:37px;
+    }
+
+
+    .localizacion-imagen img{
+        width:350px;
+    }
+
+
+    .localizacion-texto p{
+        font-size:15px;
+    }
+    .localizacion-texto a{
+        font-size:15px;
+    }
+
+}
+
+/*//////////////////////////////////////////////   ÚLTIMO FOOTER  //////////////////////////////////////////*/
+
+/*---------- Contenedor principal --------*/
+
+.footer-containr{
+    background-color:rgb(24, 26, 48);
+    min-height:50vh;
+    min-width:100vw;
+    margin-top:50px;
+}
+
+/*---------- Apartado para volver al principio de la página web --------*/
+
+.footer-containr .footer-arriba{
+    padding:25px 0;
+    display:flex;
+    justify-content:center;
+    background-color:rgb(49, 54, 94);
+}
+.footer-arriba p a{
+    color:aliceblue;
+    padding:22% 0;
+    text-decoration: none;
+}
+.footer-arriba:hover{
+    background-color:rgb(71, 79, 136);
+}
+
+/*---------- Información y el logo de la empresa  --------*/
+
+.footer{
+    width:50%;
+    margin:auto;
+    margin-top:50px;
+    display: flex;
+    gap:10px;
+}
+
+/*----------  --------*/
+.footer-logo{
+    flex:25%;
+    display: flex;
+    margin-right:20px;
+    /*border: 2px solid orange;*/
+}
+.footer-parrafos{
+    flex:70%;
+    display: flex;
+    /*border: 2px solid red;*/
+}
+
+/*----------  medida imagenes --------*/
+
+.footer .footer-logo img{
+    height:120px;
+}
+.footer-redes li img{
+    height:70px;
+    width:70px;
+}
+
+/*---------- linea --------*/
+
+.footer-containr .linea{
+    margin-top:40px;
+    background-color:rgb(82, 80, 80);
+    width:100%;
+    height:1px;
+}
+
+/*---------- redes --------*/
+
+.footer-redes{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+}
+.footer-redes ul{
+    display:flex;
+    gap:150px;
+    list-style:none;
+}
+
+.footer-redes li a:hover{
+    opacity:.7;
+}
+
+
+/*---------- textos --------*/
+
+.footer-parrafos li, .footer-parrafos p{
+    color:rgb(225, 229, 231);
+    margin-top:10px;
+}
+.footer-parrafos li a, .footer-parrafos p a{
+    color:rgb(225, 229, 231);
+    text-decoration: none;
+    font-size:18px;
+}
+.footer-parrafos li a:hover, .footer-parrafos p a:hover{
+    text-decoration:underline;
+}
+.footer-parrafos .footer-parrafo2{
+    margin-left:60px;
+ }
+.footer-parrafos h3{
+    color:aliceblue;
+    text-transform:uppercase;
+}
+
+
+@media (max-width:870px){
+    .footer{
+        width:80%;
+        flex-direction:column;
+    }
+    .footer .footer-logo{
+        margin:auto;
+    }
+    .footer-parrafos{
+        flex-direction:column;
+        
+    }
+    .footer-parrafos .footer-parrafo2, .footer-parrafos .footer-parrafo1{
+        margin-left:70px;
+        margin-top: 20px;
+     }
+
+}
+
+
+@media (max-width:670px){
+    .footer{
+        width:60%;
+    }
+    .footer-redes ul{
+        gap:100px;
+    }
+
+    /*----------  medida imagenes --------*/
+
+    .footer-redes li img{
+        height:50px;
+        width:50px;
+    }
+
+}

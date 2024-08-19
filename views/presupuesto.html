@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/hola.css">
+        <title>Presupuesto</title>
+    </head>
+    <body>
+        <!--//////////////// 1ª MENÚ DE NAVEGACIÓN ////////////////-->  
+        <header class="header2">
+            <div class="navegador">
+                <img class="imag" src="https://mlcmuebles.com/wp-content/uploads/2022/09/logo_mlcmuebles_tienda_online_tenerife_sur_islascanarias.png" alt="logo de una empresa de construcción">
+                <!----- Menú de hamburguesa ----->
+                <input type="button" id="abrir" value="abrir">
+                <nav class="link">
+                    <input type="button" id="cerrar" value="cerrar">
+                    <!----- apartados del menú de navegación ----->
+                    <ul class="nav-links">
+                        <li><a class="item home" href="../index.html">home</a></li>
+                        <li><a class="item presupuesto" href="presupuesto.html">presupuesto</a></li>
+                        <li><a class="item products" href="productos.html">products</a></li>
+                        <li><a class="item llamar" href="contacto.html">contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!------------ Título del encabezado ------------>
+            <div class="titulo2">
+                <h1>presupuesto</h1>
+            </div>
+        </header>
+        <!--//////////////// 2ª FORMULARIO ////////////////-->
+        <main>
+            <section class="presupuest">
+                <div class="contenedor-form">
+                    <!----- Título ----->
+                    <div class="inicio-sesion">
+                        <h2>Iniciar sesión</h2>
+                    </div>
+
+                    <!----- Formulario ----->
+                    
+                    <div class="formulario-box">
+                        <form action="file:///C:/Users/PC/Desktop/Hadamo_Traore1_trabajoHTML/views/presupuesto.html" name="formulario" method="post">
+                            <div class="form-box">
+                                <input type="text" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-box">
+                                <input type="email" name="correo" placeholder="Email" required>
+                            </div>
+                            <div class="form-box">
+                                <input type="password" name="contraseña" placeholder="contraseña" required>
+                            </div>
+                            <div class="form-box">
+                                <input type="password" name="repetir-contraseña" placeholder="Repita contraseña" required>
+                            </div>
+                            <div class="form-box">
+                                <input type="tel" name="numero" placeholder="Número de teléfono" required>
+                            </div>
+                            <div class="form-box">
+                                <p>Solicite más información</p>
+                                <textarea name="info"></textarea>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="privacidad" id="privacidad" required><label class="privacidad" for="privacidad">Política de privacidad</label>
+                                <p><a href="#">¿Has olvidado la contraseña?</a></p>
+                            </div>
+                            <!----- Botón del formulario ----->
+                            <div class="iniciar-sesion">
+                                <input type="submit" value="Iniciar Sesión">
+                            </div>
+                        </form>
+                    </div>
+                    <!----- Registro ----->
+                    <div class="registro">
+                        <p class="registro-grande">¿No tienes cuenta?</p> <p class="registro-p"><a href="#">Regístrate ahora</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!--//////////////// 3ª EL PIE DE PÁGINA ////////////////-->
+         <!------------ Apartado para volver al principio de la página web ------------>
+        <footer class="footer-containr">
+            <!------------ Apartado para volver al principio de la página web ------------>
+            <div class="footer-arriba">
+                <p><a href="presupuesto.html">Volver arriba</a></p>
+            </div>
+            <!------------ Información y el logo de la empresa ------------>
+            <div class="footer">
+                <div class="footer-logo">       
+                    <img src="https://mlcmuebles.com/wp-content/uploads/2022/09/logo_mlcmuebles_tienda_online_tenerife_sur_islascanarias.png" alt="logo de una empresa de construcción">
+                </div>
+                <div class="footer-parrafos">
+                    <div class="footer-parrafo1">
+                        <h3>dirección</h3>
+                        <p><a href="#">Pol. Ind Entrerrios, Carretera Nacional 232 en:</a></p>
+                        <p><a href="#">Figueruelas, Zaragoza</a></p>
+                    </div>
+                    <div class="footer-parrafo2">
+                        <h3>aviso legal</h3>
+                        <ol>
+                        <li><a href="#">Datos identificativos</a></li>
+                        <li><a href="#">Derechos de propiedad intelectual e industrial</a></li>
+                        <li><a href="#">Exención de responsabilidades</a></li>
+                        <li><a href="#">Ley aplicable y jurisdicción</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!------------ Línea ------------>
+            <div class="linea"></div>
+            <!------------ Redes de la empresa ------------>
+            <div class="footer-redes">
+                <ul>
+                    <!--------- Los links son de redes inventadas --------->
+                    <li><a href="https://www.facebook.com/epicgames/?locale=es_ES"><img src="https://png.pngtree.com/element_our/md/20180520/md_5b0125139fe89.jpg" alt="logotipo facebook" width="640" height="640"></a></li>
+                    <li><a href="https://www.instagram.com/epicgames/?hl=es"><img src="https://i.pinimg.com/originals/39/4a/7a/394a7aaecd6b8ce44528649681d9fa05.jpg" alt="logotipo instagram" width="640" height="640"></a></li>
+                    <li><a href="https://x.com/EpicGamesES"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdcxIVtG9-OGROIq2i48rTDGoYyczzkys-zg&s" alt="logotipo twitter" width="225" height="225"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
